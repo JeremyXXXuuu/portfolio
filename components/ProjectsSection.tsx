@@ -9,14 +9,14 @@ const projects = [
     name: "AI Food Calorie",
     description:
       "AI Food Calorie is a web app that uses AI to detect food and calculate calories and macros.",
-    image: "/thankfulthoughts.png",
+    image: "/portfolio/thankfulthoughts.png",
     github: "https://github.com/hqasmei/thankful-thoughts",
     link: "https://ai-food-cal.vercel.app/",
   },
   {
     name: "Steam Game Recommender",
     description: "Steam Game Recommender is a web app that uses ",
-    image: "/platoio.png",
+    image: "/portfolio/platoio.png",
     github: "https://github.com/JeremyXXXuuu/SteamGameRecomm",
     link: "",
   },
