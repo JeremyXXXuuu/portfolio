@@ -6,7 +6,8 @@ const nextConfig = {
   output: 'export',
   images: {
     domains: ['images.unsplash.com', 'github.com', 'avatars.githubusercontent.com','raw.githubusercontent.com'],
-  }
+  },
+  basePath: '/portfolio',
 }
 
 module.exports = nextConfig
