@@ -39,7 +39,7 @@ const HeroSection = () => {
             Projects
           </Link>
           <a
-            href="/portfolio/Huamao-XU-Resume.pdf"
+            href="/portfolio/Huamao_XU_Resume.pdf"
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 ml-4"
             download
           >
