@@ -1,34 +1,46 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "AI Food Calorie",
-    description:
-      "AI Food Calorie is a web app that uses AI to detect food and calculate calories and macros.",
-    image: "/portfolio/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://ai-food-cal.vercel.app/",
+    name: "Chat PDF WITH AI",
+    tech: "React, Next.js, TailwindCSS, Postgresql, OpenAI, Langchain, Verctor DB, Vercel",
+    description: "Say hello to documents that respond to you!",
+    image: "/portfolio/chatpdf.png",
+    github: "https://github.com/JeremyXXXuuu/chatpdf",
+    link: "https://ai-chatpdf.vercel.app/",
   },
   {
     name: "Steam Game Recommender",
-    description: "Steam Game Recommender is a web app that uses ",
+    tech: "React, MongoDB, Python, Pandas, Sklearn, Heroku",
+    description: "A steam game recommender based on your steam game library.",
     image: "/portfolio/platoio.png",
     github: "https://github.com/JeremyXXXuuu/SteamGameRecomm",
     link: "",
   },
   {
     name: "AppAuth-JS",
+    tech: "OAuth2, OIDC, Nodejs",
     description:
       "AppAuth-JS is a JavaScript client SDK for communicating with OAuth 2.0 and OpenID Connect providers.",
-    image: "https://raw.githubusercontent.com/JJeremyXu/AppAuth-JS/master/assets/logo.png",
+    image:
+      "https://raw.githubusercontent.com/JJeremyXu/AppAuth-JS/master/assets/logo.png",
     github: "https://github.com/JJeremyXu/AppAuth-JS",
     link: "https://github.com/JJeremyXu/AppAuth-JS",
   },
-]
+  {
+    name: "AI Food Calorie",
+    tech: "React, Next.js, TailwindCSS, OpenAI, Langchain, embedding, tRPC",
+    description:
+      "AI Food Calorie is a web app that uses AI to detect food and calculate calories and macros.",
+    image: "/portfolio/ai-food-cal.png",
+    github: "https://github.com/hqasmei/thankful-thoughts",
+    link: "https://ai-food-cal.vercel.app/",
+  },
+];
 
 const ProjectsSection = () => {
   return (
@@ -57,9 +69,11 @@ const ProjectsSection = () => {
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
+                    <h2>{project.tech}</h2>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
+
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link href={project.github} target="_blank">
                         <BsGithub
@@ -78,12 +92,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
